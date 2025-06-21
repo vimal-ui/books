@@ -1,0 +1,75 @@
+/*
+Title:  forLoopWorking2.c
+Author: E&R Department, Infosys Technologies Ltd. 
+Reviewer: Vikas Kumar Jain
+Created/Updated: Feb 2009/June 2009
+
+COPYRIGHT NOTICE:
+All ideas and information contained in this document are the intellectual property of Education and Research Department, Infosys Technologies Limited. This document is not for general distribution and is meant for use only for the person they are specifically issued to. This document shall not be loaned to anyone, within or outside Infosys, including its customers. Copying or unauthorized distribution of this document, in any form or means including electronic, mechanical, photocopying or otherwise is illegal.
+
+Education and Research Department
+Infosys Technologies Limited
+Electronics City
+Hosur Road
+Bangalore - 560 100, India.
+
+Tel: 91 80 852 0261-270
+Fax: 91 80 852 0362
+www.infosys.com
+mailto:E&R@infosys.com
+*/
+
+/*********************************************************************
+* Filename: forLoopWorking2.c
+* Description: To find out the odd numbers among the first 10 multiples 
+*				of first 10 numbers starting from 1
+* Author:   E&R Department, Infosys Technologies Ltd. 
+* Date:     12-Mar-2009
+*********************************************************************/
+
+#include<stdio.h>
+
+/*********************************************************************
+* Function: main()
+* Description: To find out the odd numbers among the first 10 multiples 
+*				of first 10 numbers starting from 1
+* Input Parameters:
+*   int argc - Number of command line arguments
+*   char **argv  The command line arguments passed
+* Returns: 0 on success to the operating system
+*********************************************************************/
+
+
+int main(int argc, char ** argv)
+{
+	/* Declaration of variables  */
+	int iFirstIndex,iSecondIndex, iResult;
+
+	/* Outer for loop */
+
+	for (iFirstIndex=1;iFirstIndex<=10;iFirstIndex++)
+	{
+		/* Inner for loop */
+		for (iSecondIndex=1;iSecondIndex<=10;iSecondIndex++)
+		{
+			iResult= iFirstIndex*iSecondIndex;
+			/* Find out if multiplication of numbers is not even*/
+			if(iResult %2!=0)
+			{
+				/*Printing the result */
+				printf("\nNumber is %d", iResult);
+			}
+		}
+	}
+
+	getch();
+	/* Return a success code to the Operating System */
+ 	return 0;
+
+}
+/*********************************************************************
+* End of forLoopWorking2.c
+*********************************************************************/
+
+
+

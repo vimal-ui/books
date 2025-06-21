@@ -1,0 +1,69 @@
+/*
+Title:  ArrayofStrings.c
+Author: E&R Department, Infosys Technologies Ltd. 
+Reviewer: Vikas Kumar Jain
+Created/Updated: Feb 2009/June 2009
+
+COPYRIGHT NOTICE:
+All ideas and information contained in this document are the intellectual property of Education and Research Department, Infosys Technologies Limited. This document is not for general distribution and is meant for use only for the person they are specifically issued to. This document shall not be loaned to anyone, within or outside Infosys, including its customers. Copying or unauthorized distribution of this document, in any form or means including electronic, mechanical, photocopying or otherwise is illegal.
+
+Education and Research Department
+Infosys Technologies Limited
+Electronics City
+Hosur Road
+Bangalore - 560 100, India.
+
+Tel: 91 80 852 0261-270
+Fax: 91 80 852 0362
+www.infosys.com
+mailto:E&R@infosys.com
+*/
+
+
+/*********************************************************************
+* Filename: ArrayofStrings.c
+* Description: Stores employee id and name for 3 employees
+* Author:   E&R Department, Infosys Technologies Ltd. 
+* Date:     11-Mar-2007
+*********************************************************************/
+
+#include <stdio.h>
+
+/*********************************************************************
+* Function: main()
+* Description: To store the employee details such as employee id and
+*              name and to display such details.
+* Input Parameters:
+*   int argc - Number of command line arguments
+*   char **argv  The command line arguments passed
+* Returns: 0 on success to the operating system
+*********************************************************************/
+
+int main (int argc, char** argv){
+
+ 	/* Declare and initialize a 1-D array to store the empid 
+	   for 3 employees */
+	int aiEmpId[5]={71005,71006,71007};
+
+	/* Declare and initialize a 2-D array to store the emp name 
+	   for 3 employees. Each employee name can contain a 
+	   maximum of 20 characters*/
+	char acEmpName[3][20]={"Ram","Clara","Dennis"};
+
+	/* Display the details */
+	printf("Employee Id\t\tEmployee Name\n");
+	printf("===========\t\t=============\n");
+	
+	printf("%d\t\t\t%s\n",aiEmpId[0],acEmpName[0]);
+	
+	printf("%d\t\t\t%s\n",aiEmpId[1],acEmpName[1]);
+	printf("%d\t\t\t%s\n",aiEmpId[2],acEmpName[2]);
+
+	getch();
+ 	/* Return a success code to the Operating System */
+ 	return 0;
+}
+
+/*********************************************************************
+* End of ArrayofStrings.c
+*********************************************************************/

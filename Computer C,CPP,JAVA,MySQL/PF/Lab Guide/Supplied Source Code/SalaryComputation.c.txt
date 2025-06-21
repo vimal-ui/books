@@ -1,0 +1,106 @@
+/*
+Title:  SalaryComputation.c
+Author: E&R Department, Infosys Technologies Ltd. 
+Reviewer: Vikas Kumar Jain
+Created/Updated: Feb 2009/June 2009
+
+COPYRIGHT NOTICE:
+All ideas and information contained in this document are the intellectual property of Education and Research Department, Infosys Technologies Limited. This document is not for general distribution and is meant for use only for the person they are specifically issued to. This document shall not be loaned to anyone, within or outside Infosys, including its customers. Copying or unauthorized distribution of this document, in any form or means including electronic, mechanical, photocopying or otherwise is illegal.
+
+Education and Research Department
+Infosys Technologies Limited
+Electronics City
+Hosur Road
+Bangalore - 560 100, India.
+
+Tel: 91 80 852 0261-270
+Fax: 91 80 852 0362
+www.infosys.com
+mailto:E&R@infosys.com
+*/
+
+/*********************************************************************
+* Filename: SalaryComputation.c
+* Description: Income tax, gross salary and net salary are computed.                  
+*              Income tax percentage is defined using preprocessor 
+*              directive
+* Author:   E&R Department,Infosys Technologies Ltd. 
+* Date:     10-Mar-2007
+*********************************************************************/
+
+#include <stdio.h>
+#include<stdlib.h>
+
+#define INCOMETAXPERCENT 20
+
+/*********************************************************************
+* Function: main()
+* Description: Income tax, gross and net salary are computed. 
+* Parameters:
+*   int argc - Number of command line arguments
+*   char **argv  The command line arguments passed
+* Returns: 0 on success to the operating system
+*********************************************************************/
+
+int main (int argc, char** argv) {
+
+ 	/* Declaration of variables  */
+  	int iEmpId;
+        double dBasicSalary;
+      	float fAllowances;
+  	
+	/* Replace this comment and write the declaration of variables 
+        for gross pay, incometax and net pay here */
+	
+	
+	/* Initialize empid, basic salary and allowances*/
+     	iEmpId = 71005;
+
+	/* Basic Salary in Indian Rupees (Rs.) */
+	dBasicSalary = 25000;
+
+ 	/* Allowances in Indian Rupees (Rs.) */
+   	fAllowances = 15000;
+
+	/* Compute the gross salary */
+	/* Replace this comment and write the code to compute the 
+        gross pay here */
+
+	/* Compute Income tax */
+	/* Replace this comment and write the code to compute the 
+        Income tax here.
+        Use the constant that is declared using #define */
+
+	/* Compute net pay (After deducting income tax 
+	from gross pay) */
+	/* Replace this comment and write the code to compute the
+        net pay here */
+
+	/* Display the employee details */
+  	printf("Employee Id                          :  %d\n", iEmpId);
+	printf("Basic Salary                         :  %.2lf\n", 
+                                                        dBasicSalary);
+	printf("Allowances                           :  %.2lf\n",  
+                                                     fAllowances);
+
+	/* Display the gross pay */
+  	/* Replace this comment and write the code to display the 
+        gross pay here */
+
+
+	/* Display the income tax percentage */
+	printf("Income tax percentage                :  %d%%\n",
+                                                 INCOMETAXPERCENT);
+	/* Display the net pay */
+	/* Replace this comment and write the code to display 
+	the net pay here */
+	
+	getch();
+	/* Return a success code to the Operating System */
+ 	return 0;
+}
+
+/*********************************************************************
+* End of SalaryComputation.c
+*********************************************************************/
+	

@@ -1,0 +1,79 @@
+/*
+Title:  JobBand.c
+Author: E&R Department, Infosys Technologies Ltd. 
+Reviewer: Vikas Kumar Jain
+Created/Updated: Feb 2009/June 2009
+
+COPYRIGHT NOTICE:
+All ideas and information contained in this document are the intellectual property of Education and Research Department, Infosys Technologies Limited. This document is not for general distribution and is meant for use only for the person they are specifically issued to. This document shall not be loaned to anyone, within or outside Infosys, including its customers. Copying or unauthorized distribution of this document, in any form or means including electronic, mechanical, photocopying or otherwise is illegal.
+
+Education and Research Department
+Infosys Technologies Limited
+Electronics City
+Hosur Road
+Bangalore - 560 100, India.
+
+Tel: 91 80 852 0261-270
+Fax: 91 80 852 0362
+www.infosys.com
+mailto:E&R@infosys.com
+*/
+
+/*********************************************************************
+* Filename: JobBand.c
+* Description: To include the job band for the employee
+* Author:   E&R Department, Infosys Technologies Ltd. 
+* Date:     10-Mar-2007
+*********************************************************************/
+
+#include <stdio.h>
+#include<stdlib.h>
+
+/*********************************************************************
+* Function: main()
+* Description: A char variable is declared to store the job band of an 
+*              employee
+* Input Parameters:
+*   int argc - Number of command line arguments
+*   char **argv - The command line arguments passed
+* Returns: 0 on success to the operating system
+*********************************************************************/
+
+int main (int argc, char** argv){
+
+ 	/* Declaration of variables */
+  	int iEmpId;
+      	double dBasicSalary;
+      	float fAllowances;
+      	char cJobBand;
+
+	/* Initialize empid, basic salary, allowances and jobband*/
+   	iEmpId = 71005;
+
+	/* Basic Salary in Indian Rupees (Rs.) */
+	dBasicSalary = 25000;
+
+ 
+	/* Allowances in Indian Rupees (Rs.) */
+   	fAllowances = 15000;
+
+	/* Initialize job band */
+	cJobBand = B;
+
+	/* Display the employee details */
+  	printf("Employee Id                        :  %d\n", iEmpId);
+	printf("Basic Salary                       :  %f\n", 
+                                                      dBasicSalary);
+	printf("Allowances                         :  %lf\n",  
+                                                   fAllowances);
+	printf("Job Band                           :  %c\n", cJobBand);
+	
+	getch();
+
+ 	/* Return a success code to the Operating System */
+ 	return 0;
+}
+
+/*********************************************************************
+* End of JobBand.c
+*********************************************************************/

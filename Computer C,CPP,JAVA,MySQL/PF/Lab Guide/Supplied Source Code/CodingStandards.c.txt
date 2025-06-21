@@ -1,0 +1,58 @@
+/*
+Title:  CodingStandards.c
+Author: E&R Department, Infosys Technologies Ltd. 
+Reviewer: Vikas Kumar Jain
+Created/Updated: Feb 2009/June 2009
+
+COPYRIGHT NOTICE:
+All ideas and information contained in this document are the intellectual property of Education and Research Department, Infosys Technologies Limited. This document is not for general distribution and is meant for use only for the person they are specifically issued to. This document shall not be loaned to anyone, within or outside Infosys, including its customers. Copying or unauthorized distribution of this document, in any form or means including electronic, mechanical, photocopying or otherwise is illegal.
+
+Education and Research Department
+Infosys Technologies Limited
+Electronics City
+Hosur Road
+Bangalore - 560 100, India.
+
+Tel: 91 80 852 0261-270
+Fax: 91 80 852 0362
+www.infosys.com
+mailto:E&R@infosys.com
+*/
+
+/********************************************************************/
+* Filename    : 
+* Author      : Education & Research Dept, Infosys Technologies 
+*               Limited
+* Date        : 04-Apr-2008
+* Description : Display the values in variables
+*********************************************************************/
+/* Include files */
+#include<stdio.h>
+
+/********************************************************************/
+* Function		: main()
+* Description	: Display the values in variables and understand 
+*                 coding standards
+* Input Parameters:
+* 	int argc - Number of command line arguments
+*   char **argv  The command line arguments passed
+* Returns: 0 on success to the operating system
+*********************************************************************/
+
+void main() {
+
+  int Number1;     /* Declaring variables*/
+     char cvalue = 'b';
+
+  /* Reading input from the user */
+	printf("Enter an integer");
+  scanf("%d", &Number1);
+  
+  /* Displaying the values */
+  printf("Number1 = %d  Char = %c \n", Number1,cvalue);
+
+  getch();
+  return 0;
+}
+
+

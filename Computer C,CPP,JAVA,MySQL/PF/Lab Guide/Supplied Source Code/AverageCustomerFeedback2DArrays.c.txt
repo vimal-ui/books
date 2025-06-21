@@ -1,0 +1,86 @@
+/*
+Title:  AverageCustomerFeedback2DArrays.c
+Author: E&R Department, Infosys Technologies Ltd. 
+Reviewer: Vikas Kumar Jain
+Created/Updated: Feb 2009/June 2009
+
+COPYRIGHT NOTICE:
+All ideas and information contained in this document are the intellectual property of Education and Research Department, Infosys Technologies Limited. This document is not for general distribution and is meant for use only for the person they are specifically issued to. This document shall not be loaned to anyone, within or outside Infosys, including its customers. Copying or unauthorized distribution of this document, in any form or means including electronic, mechanical, photocopying or otherwise is illegal.
+
+Education and Research Department
+Infosys Technologies Limited
+Electronics City
+Hosur Road
+Bangalore - 560 100, India.
+
+Tel: 91 80 852 0261-270
+Fax: 91 80 852 0362
+www.infosys.com
+mailto:E&R@infosys.com
+*/
+
+/*********************************************************************
+* Filename: AverageCustomerFeedback2DArrays.c
+* Description: To store the customer's feedback (3 customers) for
+*              employees (2 employees) using a 2-D array.
+* Author:   E&R Department, Infosys Technologies Ltd. 
+* Date:     11-Mar-2007
+*********************************************************************/
+
+#include <stdio.h>
+
+/*********************************************************************
+* Function: main()
+* Description: To store the customer's feedback using a 2-D   
+*              array and to find the average customer feedback for
+*              each employee.
+* Input Parameters:
+*   int argc - Number of command line arguments
+*   char **argv  The command line arguments passed
+* Returns: 0 on success to the operating system
+*********************************************************************/
+
+int main (int argc, char** argv) {
+
+ 	/* Declaration of 2-D array. Since there are two employees and 
+	   three customers, row size is 2 and the column size is 4 
+	   (To store employee id and the feedback) */
+  	int aiEmpCustFeedback[2][4]; 
+  	
+	/* Assign the employee id to row 0, column 0 */
+     	aiEmpCustFeedback[0][0] = 71005;
+
+	/* Assign the corresponding feedback*/
+	aiEmpCustFeedback[0][1] = 7;
+	aiEmpCustFeedback[0][2] = 8;
+	aiEmpCustFeedback[0][3] = 10;
+
+	/* Assign the employee id to row 1, column 0 */
+     	aiEmpCustFeedback[1][0] = 71006;
+
+	/* Assign the corresponding feedback*/
+	aiEmpCustFeedback[1][1] = 5;
+	aiEmpCustFeedback[1][2] = 5;
+	aiEmpCustFeedback[1][3] = 7;
+
+	
+
+	/* Display the employee id and the corresponding feedback */
+	printf("Employee Id\tFeedback-1\tFeedback-2\tFeedback-3\n");
+	printf("===========\t==========\t==========\t==========\n");
+
+	printf("%d\t\t  %d\t\t  %d\t\t  %d\n",aiEmpCustFeedback[0][0],
+		    aiEmpCustFeedback[0][1],aiEmpCustFeedback[0][2],
+			aiEmpCustFeedback[0][3]);
+	printf("%d\t\t  %d\t\t  %d\t\t  %d\n",aiEmpCustFeedback[1][0],
+		    aiEmpCustFeedback[1][1],aiEmpCustFeedback[1][2],
+			aiEmpCustFeedback[1][3]);
+	
+	getch();
+ 	/* Return a success code to the Operating System */
+ 	return 0;
+}
+
+/*********************************************************************
+* End of AverageCustomerFeedback2DArrays.c
+*********************************************************************/

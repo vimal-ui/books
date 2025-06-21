@@ -1,0 +1,79 @@
+/*
+Title:  VariablesDemo.c
+Author: E&R Department, Infosys Technologies Ltd. 
+Reviewer: Vikas Kumar Jain
+Created/Updated: Feb 2009/June 2009
+
+COPYRIGHT NOTICE:
+All ideas and information contained in this document are the intellectual property of Education and Research Department, Infosys Technologies Limited. This document is not for general distribution and is meant for use only for the person they are specifically issued to. This document shall not be loaned to anyone, within or outside Infosys, including its customers. Copying or unauthorized distribution of this document, in any form or means including electronic, mechanical, photocopying or otherwise is illegal.
+
+Education and Research Department
+Infosys Technologies Limited
+Electronics City
+Hosur Road
+Bangalore - 560 100, India.
+
+Tel: 91 80 852 0261-270
+Fax: 91 80 852 0362
+www.infosys.com
+mailto:E&R@infosys.com
+*/
+
+/*********************************************************************
+* Filename: VariablesDemo.c
+* Description: To define variables and to print numbers in
+*              decimal and hexadecimal format
+* Author:   E&R Department, Infosys Technologies Ltd. 
+* Date:     10-Mar-2007
+*********************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/*********************************************************************
+* Function: main()
+* Description: int, float and double variables are declared 
+*              and initialized and the int variables are 
+*              printed in decimal and hexa decimal format
+* Input Parameters:
+*   int argc - Number of command line arguments
+*   char **argv - The command line arguments passed
+* Returns: 0 on success to the operating system
+*********************************************************************/
+
+int main (int argc, char** argv) {
+
+ 	/* Declaration of variables  */
+  	
+      	double dBasicSalary;
+     	float fAllowances;
+  	
+	/* Initialize empid, basic salary and allowances*/
+     	iEmpId = 71005;
+
+	/* Basic Salary in Indian Rupees (Rs.) */
+	dBasicSalary = 25000;
+ 
+	/* Allowances in Indian Rupees (Rs.) */
+   	fAllowances = 15000;
+
+	/* Display the employee details */
+  	printf("Employee Id                         :  %d\n", iEmpId);
+	printf("Basic Salary                        :  %lf\n", 
+                                                       dBasicSalary);
+	printf("Allowances                          :  %f\n",  
+                                                        fAllowances);
+
+	/* Display employee id in decimal and hexa decimal format */
+	printf("Employee Id in decimal (base 10)    :  %d\n", iEmpId);
+	printf("Employee Id in hexa decimal (base 16):  %x\n", iEmpId);
+
+	getch();
+
+ 	/* Return a success code to the Operating System */
+ 	return 0;
+}
+
+/*********************************************************************
+* End of VariablesDemo.c
+*********************************************************************/

@@ -1,0 +1,63 @@
+/*
+Title:  EmployeeArray.c
+Author: E&R Department, Infosys Technologies Ltd. 
+Reviewer: Vikas Kumar Jain
+Created/Updated: Feb 2009/June 2009
+
+COPYRIGHT NOTICE:
+All ideas and information contained in this document are the intellectual property of Education and Research Department, Infosys Technologies Limited. This document is not for general distribution and is meant for use only for the person they are specifically issued to. This document shall not be loaned to anyone, within or outside Infosys, including its customers. Copying or unauthorized distribution of this document, in any form or means including electronic, mechanical, photocopying or otherwise is illegal.
+
+Education and Research Department
+Infosys Technologies Limited
+Electronics City
+Hosur Road
+Bangalore - 560 100, India.
+
+Tel: 91 80 852 0261-270
+Fax: 91 80 852 0362
+www.infosys.com
+mailto:E&R@infosys.com
+*/
+
+/*********************************************************************
+* Filename: EmployeeArray.c
+* Description: Demonstrate the use of array references
+* Author:   E&R Department, Infosys Technologies Ltd. 
+* Date:     10-Mar-2007
+*********************************************************************/
+
+#include <stdio.h>
+
+/*********************************************************************
+* Function: main()
+* Description: Employee ids are assigned to the array and shows 
+*              the valid array references
+* Input Parameters:
+*   int argc - Number of command line arguments
+*   char **argv  The command line arguments passed
+* Returns: 0 on success to the operating system
+*********************************************************************/
+
+int main (int argc, char** argv){
+
+ 	/* Declaration of array to store 4 employee ids  */
+	int aiEmpId[4];
+        
+	/* Initialize the employee ids for only 3 employees */
+	aiEmpId[0]=71005;
+	aiEmpId[1]=71006;
+	aiEmpId[200]=71005;
+
+	/* Display the employee ids */
+  	printf("Employee Id-1: %d\n",aiEmpId[0]);
+	printf("Employee Id-2: %d\n",aiEmpId[1]);
+	printf("Employee Id-3: %d\n",aiEmpId[2]);
+
+	getch();
+ 	/* Return a success code to the Operating System */
+ 	return 0;
+}
+
+/*********************************************************************
+* End of EmployeeArray.c
+*********************************************************************/

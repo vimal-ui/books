@@ -1,0 +1,62 @@
+/*
+Title:  whileLoopWorking3.c
+Author: E&R Department, Infosys Technologies Ltd. 
+Reviewer: Vikas Kumar Jain
+Created/Updated: Feb 2009/June 2009
+
+COPYRIGHT NOTICE:
+All ideas and information contained in this document are the intellectual property of Education and Research Department, Infosys Technologies Limited. This document is not for general distribution and is meant for use only for the person they are specifically issued to. This document shall not be loaned to anyone, within or outside Infosys, including its customers. Copying or unauthorized distribution of this document, in any form or means including electronic, mechanical, photocopying or otherwise is illegal.
+
+Education and Research Department
+Infosys Technologies Limited
+Electronics City
+Hosur Road
+Bangalore - 560 100, India.
+
+Tel: 91 80 852 0261-270
+Fax: 91 80 852 0362
+www.infosys.com
+mailto:E&R@infosys.com
+*/
+
+/*********************************************************************
+* Filename: whileLoopWorking3.c
+* Description: To understand the working of while loop
+* Author:   E&R Department, Infosys Technologies Ltd. 
+* Date:     12-Mar-2009
+*********************************************************************/
+#include<stdio.h>
+#include<stdlib.h>
+
+
+/*********************************************************************
+* Function: main()
+* Description: To understand the working of while loop
+* Input Parameters:
+*   int argc - Number of command line arguments
+*   char **argv  The command line arguments passed
+* Returns: 0 on success to the operating system
+*********************************************************************/
+int main(int argc, char ** argv)
+{
+	/*Declaration and Initialization of variables */
+	int iIndex=1,iSum=0;
+
+	while(iIndex<5)
+	{
+		iIndex++;
+		if(iIndex==3)
+		{
+			continue;
+			
+		}
+		iSum=iIndex*iIndex+iSum;
+	}
+	printf("%d %d",iSum,iIndex);
+	getch();
+	
+	/* Return a success code to the Operating System */
+ 	return 0;
+}/*********************************************************************
+* End of whileLoopWorking3.c
+*********************************************************************/
